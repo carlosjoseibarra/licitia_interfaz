@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Chat from './Chat'
+import Analyzer from './Analyzer'
 import './App.css'
 
 function App() {
@@ -10,8 +11,15 @@ function App() {
 
   return (
     <>
-    <Chat />
-      <section id="center">
+    <div style={{display:"flex", gap:"20px", padding:"20px"}}>
+
+  <Chat />
+
+  <Analyzer />
+
+</div>
+
+<section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
